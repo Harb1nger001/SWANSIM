@@ -1,0 +1,36 @@
+simulation:
+  steps: 36500  # 100 years
+  dt: 1.0  # Time step size
+
+agents:
+  households:
+    count: 10000000
+    classes:
+      poor: 0.35
+      working: 0.2
+      middle: 0.449
+      elite: 0.01
+  firms:
+    count: 1000
+    types:
+      startup: 0.5
+      sme: 0.3
+      mnc: 0.2
+  government:
+    initial_tax_rate: 0.2
+    initial_interest_rate: 0.05
+
+economics:
+  initial_gdp: 10000000.0
+  inflation_target: 0.02
+
+shocks:
+  probability: 0.01
+  severity_range: [0.1, 0.5]
+
+rl:
+  gamma: 0.99
+  tau: 0.01
+  lr_actor: 0.01
+  lr_critic: 0.02
+  batch_size: 64

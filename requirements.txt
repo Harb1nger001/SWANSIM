@@ -1,0 +1,17 @@
+fastapi
+uvicorn[standard]
+numpy
+pandas
+networkx
+torch
+gymnasium
+pyyaml
+python-dotenv
+requests
+matplotlib
+scipy
+websockets
+streamlit
+plotly
+requests
+
